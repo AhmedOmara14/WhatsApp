@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="-1000dp"
+            android:layout_margin="10dp"
+
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/rect"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/profile_image">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/profile_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ahmed Omara"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp"
+
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/cardview_dark_background"
+                        >
+
+                    </TextView>
+                    <ImageView
+                        android:id="@+id/onlineornot"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="14dp"
+                        android:visibility="invisible"
+                        android:src="@drawable/online">
+
+                    </ImageView>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/profile_statue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Android Developer"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15dp"
+                    >
+
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+
+</RelativeLayout>

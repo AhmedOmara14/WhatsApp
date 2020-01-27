@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/whassapp"
+    tools:context=".chat_send_message.chatActivity">
+    <include
+        layout="@layout/whatsapp_toollbar"
+
+        >
+    </include>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_chat_message"
+        android:layout_width="match_parent"
+        android:layout_above="@id/send_mess_chat"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/send_mess_chat"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/yourmessage_chat"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/back_edit"
+            android:hint="write your message"
+
+            android:paddingLeft="8dp">
+
+        </EditText>
+
+        <ImageView
+            android:id="@+id/btn_send_mess_chat"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:src="@drawable/rightarrow">
+
+        </ImageView>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/btn_send_file"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="270dp"
+        android:layout_below="@id/recycler_chat_message"
+        android:src="@drawable/send_files">
+
+    </ImageView>
+
+
+
+</RelativeLayout>

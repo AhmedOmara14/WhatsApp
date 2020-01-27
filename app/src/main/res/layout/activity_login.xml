@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.loginActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/ss"
+        android:layout_marginLeft="-130dp"
+        android:layout_marginTop="50dp">
+
+    </ImageView>
+
+    <EditText
+        android:id="@+id/email_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Email"
+        android:textDirection="ltr"
+        android:layout_marginTop="320dp"
+        android:layout_marginLeft="40dp"
+        android:inputType="textEmailAddress"
+        android:layout_marginRight="40dp"
+        android:background="@color/colorAccent"
+
+        >
+
+    </EditText>
+    <EditText
+        android:id="@+id/pass_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Password"
+        android:textDirection="ltr"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="380dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@color/colorAccent"
+        >
+
+    </EditText>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:text="Login"
+        android:background="@drawable/backbtn"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        style="@style/Theme.AppCompat.DayNight.Dialog"
+        android:textSize="20dp"
+        android:textColor="@color/colorAccent"
+        >
+
+    </Button>
+
+    <TextView
+        android:id="@+id/cratenewaccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="510dp"
+        android:layout_marginLeft="120dp"
+        android:textSize="18dp"
+        android:layout_marginRight="120dp"
+        android:text="create new Account"
+        android:textDirection="ltr"
+
+        android:textColor="@color/colorPrimary">
+
+    </TextView>
+    <Button
+        android:id="@+id/login_btn_with_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550dp"
+        android:text="Phone"
+        android:background="@drawable/backbtn"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        style="@style/Theme.AppCompat.DayNight.Dialog"
+        android:textSize="20dp"
+        android:textColor="@color/colorAccent"
+        >
+
+    </Button>
+</RelativeLayout>

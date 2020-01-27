@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Setting.Setting">
+    <include
+        layout="@layout/whatsapp_toollbar">
+
+    </include>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image1"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="90dp"
+        android:src="@drawable/profile_image"
+        app:civ_border_color="#FF000000"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:hint="Username"
+
+        android:background="@color/colorAccent"
+        >
+
+    </EditText>
+    <EditText
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="470dp"
+        android:layout_marginLeft="50dp"
+        android:background="@color/colorAccent"
+        android:paddingLeft="10dp"
+        android:layout_marginRight="50dp"
+        android:hint="Status"
+        >
+
+    </EditText>
+    <Button
+        android:id="@+id/update_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="540dp"
+        android:text="Update"
+        android:background="@drawable/backbtn"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        style="@style/Theme.AppCompat.DayNight.Dialog"
+        android:textSize="20dp"
+        android:textColor="@color/colorAccent"
+        >
+
+    </Button>
+
+</RelativeLayout>
